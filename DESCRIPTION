@@ -1,0 +1,11 @@
+Package: TranslateR
+Type: Package
+Title: Translate nucleotide sequences to amino acids
+Version: 0.1.0
+Author: Julio Gamboa
+Maintainer: Julio Gamboa <j.a.r.gamboa@gmail.com>
+Description: Take DNA or RNA sequences and translate them to IUPAC amino acid codes.
+License: GPL(>=2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
