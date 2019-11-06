@@ -168,4 +168,5 @@ translate <- function(sequence) {
     }
     return(paste(unlist(result), sep = "", collapse = " "))
   }
+}
 
