@@ -166,6 +166,6 @@ translate <- function(sequence) {
     if (!dna[i] %in% table[, 1]) {
       result[[i]] <- '-'
     }
-    return(paset(unlist(result), sep = "", collapse = " "))
+    return(paste(unlist(result), sep = "", collapse = " "))
   }
 
