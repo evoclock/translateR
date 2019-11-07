@@ -1,13 +1,13 @@
 #'Translate DNA or RNA sequence to amino acid
-
+#'
 #'@param sequence a text string containg a DNA or RNA sequence.
 #'@return A text string that represents the translated amino acid sequence.
 #'@examples
 #'sequence <- "ATGCTGTAG"
-#'translate(sequence)
+#'Translate(sequence)
 #'@export
 
-translate <- function(sequence) {
+Translate <- function(sequence) {
   if(nchar(sequence)%%3 !=0){
     warning("DNA sequence isn't a multiple of 3. The function will assume that the first base
             is in position one")
@@ -39,7 +39,7 @@ translate <- function(sequence) {
   for(i in 1:length(codons)){
     result[i] <- table[table[,1] == codons[[i]], 2]
   }
-   return(paste(unlist(result), sep="", collapse= ""))
+   return(paste(unlist(result), sep="", collapse=""))
 }
 
 
