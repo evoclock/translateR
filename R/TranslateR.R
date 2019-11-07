@@ -4,9 +4,9 @@
 #'@return A text string that represents the translated amino acid sequence
 #'@examples
 #'sequence <- "ATGCTGTAG"
-#'Translate(sequence)
+#'Tslate(sequence)
 #'@export
-Translate <- function(sequence){
+Tslate <- function(sequence){
   if(nchar(sequence)%%3 !=0){
     warning("DNA sequence isn't a multiple of 3. The function will assume that the first base
             is in position one")
