@@ -1,4 +1,4 @@
-#' Translate DNA or RNA sequence to amino acid
+#'Translate DNA or RNA sequence to amino acid
 
 #'@param sequence a text string containg a DNA or RNA sequence.
 #'@return A text string that represents the translated amino acid sequence.
