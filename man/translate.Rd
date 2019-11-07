@@ -2,18 +2,18 @@
 % Please edit documentation in R/TranslateR.R
 \name{Translate}
 \alias{Translate}
-\title{Translate DNA or RNA sequence to amino acid}
+\title{Translate any DNA or RNA sequence to IUPAC amino acid code}
 \usage{
 Translate(sequence)
 }
 \arguments{
-\item{sequence}{a text string containg a DNA or RNA sequence.}
+\item{sequence}{a text string containg a DNA or RNA sequence}
 }
 \value{
-A text string that represents the translated amino acid sequence.
+A text string that represents the translated amino acid sequence
 }
 \description{
-Translate DNA or RNA sequence to amino acid
+Translate any DNA or RNA sequence to IUPAC amino acid code
 }
 \examples{
 sequence <- "ATGCTGTAG"
