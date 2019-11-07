@@ -37,11 +37,9 @@ translate <- function(sequence) {
   }
   result <- c()
   for(i in 1:length(codons)){
-    result[[i]] <- table[table[,1] == dna[i], 2]
-    if(!dna[i] %in% table[,1]){
-      result[[i]] <- '-'
-    }
-   return(paste(unlist(result), sep="", collapse= " "))
+    result[i] <- table[table[,1] == codons[[i]], 2]
   }
+   return(paste(unlist(result), sep="", collapse= ""))
 }
+
 
