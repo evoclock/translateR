@@ -18,9 +18,7 @@ Tslate <- function(sequence){
                     "ACU","ACC","ACA","ACG","AAU","AAC","AAA","AAG","AGU",
                     "AGC","AGA","AGG","GUU","GUC","GUA","GUG","GCU","GCC",
                     "GCA","GCG","GAU","GAC","GAA","GAG","GGU","GGC", "GGA",
-                    "GGG",
-
-                    "F", "F", "L", "L", "S", "S", "S", "S", "Y", "Y",
+                    "GGG", "F", "F", "L", "L", "S", "S", "S", "S", "Y", "Y",
                     "*", "*", "C", "C", "W", "W", "L", "L", "L", "L", "P", "P",
                     "P", "P", "H", "H", "Q", "Q", "R", "R", "R", "R", "I", "I",
                     "M", "M", "T", "T", "T", "T", "N", "N", "K", "K", "S", "S",
@@ -40,5 +38,3 @@ Tslate <- function(sequence){
   }
   return(paste(unlist(result), sep="", collapse=""))
 }
-
-
