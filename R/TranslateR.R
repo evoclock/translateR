@@ -11,19 +11,15 @@ Tslate <- function(sequence){
     warning("DNA sequence isn't a multiple of 3. The function will assume that the first base
             is in position one")
   }
-  table <- matrix(c("UUU", "UUC","UUA","UUG","UCU","UCC","UCA","UCG","UAU",
-                    "UAC","UAA","UAG","UGU","UGC","UGA","UGG","CUU","CUC",
-                    "CUA","CUG","CCU","CCC","CCA","CCG","CAU","CAC","CAA",
-                    "CAG","CGU","CGC","CGA","CGG","AUU","AUC","AUA","AUG",
-                    "ACU","ACC","ACA","ACG","AAU","AAC","AAA","AAG","AGU",
-                    "AGC","AGA","AGG","GUU","GUC","GUA","GUG","GCU","GCC",
-                    "GCA","GCG","GAU","GAC","GAA","GAG","GGU","GGC", "GGA",
-                    "GGG", "F", "F", "L", "L", "S", "S", "S", "S", "Y", "Y",
-                    "*", "*", "C", "C", "W", "W", "L", "L", "L", "L", "P", "P",
-                    "P", "P", "H", "H", "Q", "Q", "R", "R", "R", "R", "I", "I",
-                    "M", "M", "T", "T", "T", "T", "N", "N", "K", "K", "S", "S",
-                    "*", "*", "V", "V", "V", "V", "A", "A", "A", "A", "D", "D",
-                    "E", "E", "G", "G", "G", "G"), 64, 2)
+  table <- matrix(c("TTT","TTC","TTA","TTG","CTT","CTC","CTA","CTG","ATT","ATC","ATA","ATG",
+                    "GTT","GTC","GTA","GTG","TCT","TCC","TCA","TCG","CCT","CCC","CCA","CCG",
+                    "ACT","ACC","ACA","ACG","GCT","GCC","GCA","GCG","TAT","TAC","TAA","TAG",
+                    "CAT","CAC","CAA","CAG","AAT","AAC","AAA","AAG","GAT","GAC","GAA","GAG",
+                    "TGT","TGC","TGA","TGG","CGT","CGC","CGA","CGG","AGT","AGC","AGA","AGG",
+                    "GGT","GGC","GGA","GGG","F","F","L","L","L","L","L","L","I","I","I","M",
+                    "V","V","V","V","S","S","S","S","P","P","P","P","T","T","T","T","A","A",
+                    "A","A","Y","Y","*","*","H","H","Q","Q","N","N","K","K","D","D","E","E",
+                    "C","C","*","W","R","R","R","R","S","S","R","R","G","G","G","G"), 64, 2)
   dna <- toupper(sequence)
   dna <- gsub("U", "T", dna)
   codons <- list()
