@@ -15,10 +15,10 @@ for eukaryotes. This function does not support ambiguity codes.
 # Installation
 You can install this package directly from GitHub using the following code. 
 
-```{r, eval=F}
+```{r, eval=FALSE}
 install.packages("devtools")
 library(devtools)
-install_github('evoclock/translateR', buld_vignettes = T)
+install_github('evoclock/translateR', build_vignettes = T)
 
 ```
 
