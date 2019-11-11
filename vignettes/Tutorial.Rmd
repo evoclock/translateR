@@ -1,0 +1,39 @@
+---
+title: "TranslateR tutorial"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{TranslateR tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+The translateR package is a simple package that allows you to take a DNA or RNA sequence as input and 
+produce an output that contains the sequence translated to IUPAC amino acid codes. 
+This package only works with nuclear DNA sequences 
+for eukaryotes. This function does not support ambiguity codes.
+
+# Installation
+You can install this package directly from GitHub using the following code. 
+
+```{r, eval=F}
+install.packages("devtools")
+library(devtools)
+install_github('evoclock/translateR', buld_vignettes = T)
+
+```
+
+
+# Example code
+
+
+``` {r}
+# load the package
+library(TranslateR)
+
+# store a DNA sequence
+data <- "ATGtacacagctaaaGAacggauuuctacacatGAAGgtagagaggccacagagagcacguag"
+
+# translate the DNA sequence to IUPAC amino acid codes.
+Tslate(data)
+
+```

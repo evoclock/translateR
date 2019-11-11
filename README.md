@@ -1,2 +1,9 @@
 # translateR
-Practice package to translate nucleotide sequences to IUPAC amino acid names
+Install this package directly from GitHub using the following code:
+
+```{r}
+install.packages("devtools")
+library(devtools)
+install_github('evoclock/TranslateR', buld_vignettes = T)
+library(TranslateR)
+```
